@@ -151,10 +151,12 @@
 
         <h2>Submit Your Details</h2>
 
-        <form action="https://formsubmit.co/kollubalakrishna914@gmail.com" method="POST">
+        <form action="https://api.web3forms.com/submit" method="POST">
+
+                <input type="hidden" name="access_key" value="19213ec3-5484-4e15-8860-b33c4ad5a8e2">
 
             <!-- Redirect After Submit -->
-            <input type="hidden" name="_next" value="https://docs.google.com/spreadsheets/d/1ZN1BCmKXr2Du-ldBk0S3pwzoZgVpCFID2BkkYpRQcks/edit?usp=sharing">
+            <input type="hidden" name="redirect" value="https://docs.google.com/spreadsheets/d/1ZN1BCmKXr2Du-ldBk0S3pwzoZgVpCFID2BkkYpRQcks/edit?usp=sharing">
 
             <!-- Disable Captcha -->
             <input type="hidden" name="_captcha" value="false">
@@ -717,13 +719,20 @@
         <div class="contact-left">
             <h2>Contact <span>Me</span></h2>
 
-            <form class="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Email Address" required>
-                <input type="text" placeholder="Phone Number" required>
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
+            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+    <!-- Your Access Key -->
+    <input type="hidden" name="access_key" value="19213ec3-5484-4e15-8860-b33c4ad5a8e2">
+
+    <!-- Disable Captcha -->
+    <input type="hidden" name="captcha" value="false">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Email Address" required>
+    <input type="text" name="phone" placeholder="Phone Number" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+
+    <button type="submit">Send Message</button>
+</form>
         </div>
 
         <div class="contact-right">
@@ -791,11 +800,11 @@
         <div class="footer-section footer-links">
             <h3>Quick Links</h3>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">FAQ</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#skills">Skills</a></li>
             </ul>
         </div>
 
